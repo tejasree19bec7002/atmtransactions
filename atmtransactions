@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args)
+	{
+	   Scanner in=new Scanner(System.in);
+	   int current_amount,balance_amount1,balance_amount2,deposit_amount,withdrawal_amount,account_number;
+	   System.out.println("enter the account number:");
+	   account_number=in.nextInt();
+	   System.out.println("enter the current_amount in account:");
+	   current_amount=in.nextInt();
+	   System.out.println("enter the amount to be deposited: ");
+	   deposit_amount=in.nextInt();
+	   System.out.println("enter the amount to be withdrawed:");
+	   withdrawal_amount=in.nextInt();
+	   switch(current_amount)
+	   {
+	       case 1:
+	           {
+	              balance_amount1=current_amount-withdrawal_amount;
+	              System.out.println("balance amount in the account when withdrawal is:"+balance_amount1);
+	              break;
+	           }
+	           case 2:
+	               {
+	                   balance_amount2=current_amount+deposit_amount;
+	                   System.out.println("balance amount in the account when deposit is:"+balance_amount2);
+	                   break;
+	               }
+	   }
+	}   
+}
